@@ -1,0 +1,37 @@
+html, body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  color: #fff;
+  background-image: url(/static/img/bg_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+img{
+  vertical-align: middle;
+  max-width: 100%;
+  border: 0;
+}
+
+@media only screen and (min-width: 1365px) {
+  html, body {
+    font-size: 50px !important;
+  }
+  body {
+    background-image: url(/static/img/bg_pc.png);
+  }
+}
+@media only screen and (min-width: 1919px) {
+  html, body {
+    font-size: 100px !important;
+  }
+}
