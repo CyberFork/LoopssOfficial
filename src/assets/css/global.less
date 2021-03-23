@@ -79,7 +79,9 @@ header{
 
     .module {
       text-align: center;
-      padding: .5rem;
+      padding: .5rem 0;
+      width: 14rem;
+      margin: 0 auto;
 
       .title {
         font-size: .42rem;
@@ -116,8 +118,6 @@ header{
         .content {
           display: flex;
           justify-content: space-between;
-          margin: 0 3.1rem;
-
 
           .c-item {
             display: flex;
@@ -160,7 +160,7 @@ header{
         }
 
         .icon {
-          height: 5.7rem;
+          width: 7.62rem;
           margin: .65rem 0;
         }
 
@@ -168,7 +168,7 @@ header{
           display: inline-block;
           vertical-align: middle;
           line-height: .5rem;
-          width: 5.1rem;
+          width: 5rem;
           text-align: left;
 
           .c-title {
@@ -183,7 +183,6 @@ header{
       }
 
       &.blogs {
-        margin: 0 3.1rem;
         .content {
           display: flex;
           flex-wrap: wrap;
@@ -225,18 +224,20 @@ header{
       }
 
       &.partners {
-        margin: 0 3rem;
         .content {
           .c-item {
             display: inline-block;
-            width: 2rem;
-            height: 1.4rem;
             border-radius: .2rem;
             margin: .3rem .2rem;
+            padding: .2rem;
             background-color: rgba(255, 255, 255, .1);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+            .img{
+              width: 1.6rem;
+              height: 1rem;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
           }
         }
       }
@@ -423,17 +424,19 @@ header{
       }
       &.partners{
         .content{
-          .c-item{
+          .c-item {
             display: inline-block;
-            width: 1.2rem;
-            height: 1.08rem;
-            background: rgba(255, 255, 255, .1);
-            background-color: rgba(255, 255, 255, .1);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
             border-radius: .2rem;
-            margin: 0.05rem;
+            margin: .3rem .2rem;
+            padding: .1rem;
+            background-color: rgba(255, 255, 255, .1);
+            .img{
+              width: 1rem;
+              height: 0.88rem;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
           }
         }
       }

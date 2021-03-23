@@ -62,7 +62,9 @@
     <div class="module partners">
       <div class="title"><span class="text">合作伙伴</span></div>
       <div class="content">
-        <div class="c-item" v-for="(item, i) in partners" :key="i" :style="{backgroundImage: `url(${item.icon})`}"></div>
+        <div class="c-item" v-for="(item, i) in partners" :key="i">
+          <div class="img" :style="{backgroundImage: `url(${item.icon})`}"></div>
+        </div>
       </div>
     </div>
   </div>

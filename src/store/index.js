@@ -13,7 +13,7 @@ export default new Vuex.Store({
     SET_SCREEN(state, screenObj) {
       state.clientWidth = screenObj.width
       state.clientHeight = screenObj.height,
-      state.isMobile = screenObj.width < 1366
+      state.isMobile = screenObj.width < 800
       if(state.isMobile && document.body){
         document.body && (document.body.className = 'mobile')
       }else{

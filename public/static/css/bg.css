@@ -22,7 +22,7 @@ img{
   border: 0;
 }
 
-@media only screen and (min-width: 1365px) {
+@media only screen and (min-width: 800px) {
   html, body {
     font-size: 50px !important;
   }
@@ -30,7 +30,7 @@ img{
     background-image: url(/static/img/bg_pc.png);
   }
 }
-@media only screen and (min-width: 1919px) {
+@media only screen and (min-width: 1920px) {
   html, body {
     font-size: 100px !important;
   }
