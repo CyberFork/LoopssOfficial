@@ -10,7 +10,7 @@
           为 DAOs 、社交代币、Web3 社交网络在区块链上建立可验证的社会关系。任何人可以使用 LOOP 基于社会关系的代币分发、治理、权限与金库管理，进化为社区化资本与 DAOs
         </div>
         <div class="btn-wrap">
-          <div class="btn primary">开始使用</div>
+          <a class="btn primary" href="#">开始使用</a>
         </div>
       </div>
     </div>
@@ -63,7 +63,9 @@
       <div class="title"><span class="text">合作伙伴</span></div>
       <div class="content">
         <div class="c-item" v-for="(item, i) in partners" :key="i">
-          <div class="img" :style="{backgroundImage: `url(${item.icon})`}"></div>
+          <a class="img" :href="item.href">
+            <img :src="item.icon" />
+          </a>
         </div>
       </div>
     </div>
@@ -112,19 +114,26 @@
         }],
         blogs: [],
         partners: [{
+          href: '#',
           icon: require('../assets/img/partners/bsc.png')
         }, {
+          href: '#',
+          icon: require('../assets/img/partners/xqrb.png')
+        }, {
+          href: '#',
           icon: require('../assets/img/partners/cfx.png')
         }, {
-          icon: require('../assets/img/partners/mttk.png')
-        }, {
-          icon: require('../assets/img/partners/nash.png')
-        }, {
+          href: '#',
           icon: require('../assets/img/partners/og.png')
         }, {
+          href: '#',
+          icon: require('../assets/img/partners/nash.png')
+        }, {
+          href: '#',
           icon: require('../assets/img/partners/unisave.png')
         }, {
-          icon: require('../assets/img/partners/xqrb.png')
+          href: '#',
+          icon: require('../assets/img/partners/mttk.png')
         }]
       }
     },
